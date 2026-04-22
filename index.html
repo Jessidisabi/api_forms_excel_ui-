@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --bg-color: #FFF5E1; /* Creme suave */
+            --card-color: #ffffff;
+            --primary-pink: #FFB7B2; /* Rosa pastel */
+            --primary-blue: #B2E2F2; /* Azul pastel */
+            --text-color: #5D5D5D;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .form-card {
+            background: var(--card-color);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2 { color: var(--primary-pink); text-align: center; }
+
+        label { display: block; margin-top: 15px; color: var(--text-color); font-weight: bold; }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid var(--primary-blue);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 15px;
+            background-color: var(--primary-pink);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover { background-color: #ff9e99; }
+    </style>
+</head>
+<body>
+
+<div class="form-card">
+    <h2>☕ Cat Cafe Feedback</h2>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeVqrxt67BVUtBBoDHk8oJ-hj3z-RlUnpTCwupg23h8w4av0g/formResponse" method="POST">
+        
+        <label>Seu Nome</label>
+        <input type="text" name="entry.1048121890" required>
+
+        <label>Nota (1 a 5)</label>
+        <input type="number" name="entry.399268551" min="1" max="5">
+
+        <label>Indicaria o App?</label>
+        <select name="entry.840768461">
+            <option value="Sim">Sim 😻</option>
+            <option value="indicaria, mas com ressalvas">Indicaria com ressalvas</option>
+            <option value="não">Não</option>
+        </select>
+
+        <button type="submit">Enviar Amor para o Cat Cafe</button>
+    </form>
+</div>
+
+</body>
+</html>
